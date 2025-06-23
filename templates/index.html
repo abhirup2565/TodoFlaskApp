@@ -15,29 +15,32 @@
                 <input type="submit" class="action_button" value="Add Task">
             </form>
         </div>
-       {%if tasks|length <1 %}
-       <h2>No Task added yet <br> Create one now!!</h2>
+       
 
-       {% else %}
-        <table class="index_table">
-            <tr>
-                <th>Task</th>
-                <th>Added</th>
-                <th>Action</th>
-            </tr>
-            {% for task in tasks%}
-            <tr>
-                <td>{{task.content}}</td>
-                <td>{{task.date_created.date()}}</td>
-                <td>
-                    <a href="/delete/{{task.id}}">Delete</a>
-                    <a href="/update/{{task.id}}">Update</a>
-                </td>
-            </tr>
-            {% endfor %}
+       {% if tasks %}
+            <table class="index_table">
+                <tr>
+                    <th>Task</th>
+                    <th>Added</th>
+                    <th>Action</th>
+                </tr>
+                {% for task in tasks%}
+                <tr>
+                    <td>{{task.content}}</td>
+                    <td>{{task.date_created.date()}}</td>
+                    <td>
+                        <a href="/delete/{{task.id}}">Delete</a>
+                        <a href="/update/{{task.id}}">Update</a>
+                    </td>
+                </tr>
+                {% endfor %}
 
-        </table>
-        {%endif%}
+            </table>
+
+        {% else %}
+            <h2>No Task added yet <br> Create one now!!</h2>
+       
+       {%endif%}
         
         
 
