@@ -4,14 +4,16 @@
 {% endblock %}
 
 {% block body %}
+    <div class="title_container">
+        <h1 class="title">Update Task </h1>
+    </div>
+        
     <div class="content">
-        <h1>Update Task </h1>
-        
-        
+       <div class="actions"> 
         <form action="/update/{{task.id}}" method="post">
-            <input type="text" name="content" value={{task.content}} id="content">
-            <input type="submit" value="Update">
+            <input type="text" class="action_input" name="content" value={{task.content}} id="content">
+            <input type="submit" class="action_button" value="Update">
         </form>
-
+    </div>
     </div>   
 {% endblock %}

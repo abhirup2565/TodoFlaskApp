@@ -1,0 +1,66 @@
+html{
+    font-size: 100%;
+     box-sizing: border-box;
+     margin: -0.433rem;
+}
+body{
+    background-color: #ECEFCA;
+    padding: none;
+    margin: none;
+}
+a{
+    text-decoration: none;
+    padding: 0.625rem;
+}
+a:link,a:visited{
+    color: #000000;
+}
+a:visited{
+    text-decoration: none
+    
+}
+.title{
+    text-align: center;
+    color: #ECEFCA;
+}
+.title_container{
+    background-color: #213448;
+    padding: 20px;
+    width: 100%;
+    
+}
+.content{
+    text-align: center;
+    
+}
+.index_table
+{
+    background-color: #547792;
+    border: 5px solid #94B4C1;
+    text-align: center;
+    width: 90%;
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 2rem;
+}
+th {
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.action_input
+{
+    width: 60%;
+}
+.action_button
+{
+    background-color: #213448;  
+    color: #ECEFCA;
+}
+.actions
+{
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem;
+}
