@@ -11,9 +11,11 @@
     <div class="content">
        <div class="actions"> 
         <form action="/update/{{task.id}}" method="post">
-            <input type="text" class="action_input" name="content" value={{task.content}} id="content">
+            <!-- <input type="text"  class="action_input" name="content" value={{task.content}} id="content"> -->
+            <textarea name="content" id="content" rows="10" cols="50">{{task.content}}</textarea>
             <input type="submit" class="action_button" value="Update">
         </form>
+        
     </div>
     </div>   
 {% endblock %}
